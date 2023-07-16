@@ -1,0 +1,64 @@
+<!--HTML CODE--> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Dynamic Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Simple Dynamic Website</h1>
+  </header>
+
+  <main>
+    <section id="dynamicContent">
+      <p id="displayText">Click the button to change the text dynamically!</p>
+      <button onclick="changeText()">Change Text</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
+<!--CSS CODE --> 
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#displayText {
+  font-size: 18px;
+}
+
+  
+<!--JS CODE--> 
+function changeText() {
+  var displayText = document.getElementById("displayText");
+  displayText.textContent = "Text has been changed dynamically!";
+}
+
+  
